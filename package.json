@@ -1,0 +1,14 @@
+{
+  "name": "com.tayouvr.vrchatcollisiontagexplorer",
+  "displayName": "Vrchat Collision Tag Explorer",
+  "version": "0.0.1",
+  "unity": "2019.4",
+  "description": "Allows Exploring community made VRChat Collision Tags for the Contact Senders and Receivers",
+  "author": {
+    "name": "Tayou",
+    "email": "tayou@gmx.net",
+    "url": "https://github.com/TayouVR"
+  },
+  "url": "https://github.com/TayouVR/VRChatCollisionTagExplorer#0.0.1",
+  "type": "library"
+}
