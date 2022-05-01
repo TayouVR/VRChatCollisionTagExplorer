@@ -1,24 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using VRC.SDK3.Dynamics.Contact.Components;
+using UnityEditor;
 
-public class VRCContactReceiverCommunityEditor : VRCContactReceiverEditor
+
+namespace com.tayouvr.vrchatcollisiontagexplorer
 {
-    SerializedProperty targetObject;
-
-    protected override void OnEnable()
+    [UnityEditor.CustomEditor(typeof(VRCContactReceiver))]
+    public class VRCContactReceiverCommunityEditor : Editor
     {
-        base.OnEnable();
-        targetObject = (VRCContectSender)serializedObject;
-    }
+        VRCContactReceiver targetObject;
 
-    public override void OnInspectorGUI()
-    {
-        base.OnInspectorGUI();
-        EditorGUILayout.Space();
+        protected void Awake()
+        {
+            targetObject = (VRCContactReceiver)target;
+        }
 
-        serializedObject.Update();
-        //EditorGUILayout.PropertyField(m_testObject);
-        serializedObject.ApplyModifiedProperties();
+        public override void OnInspectorGUI()
+        {
+            base.OnInspectorGUI();
+            EditorGUILayout.Space();
+
+            serializedObject.Update();
+            //EditorGUILayout.PropertyField(m_testObject);
+            serializedObject.ApplyModifiedProperties();
+        }
     }
 }
