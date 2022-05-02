@@ -1,7 +1,9 @@
 {
     "name": "com.tayouvr.vrchatcollisiontagexplorer",
     "references": [],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": true,
