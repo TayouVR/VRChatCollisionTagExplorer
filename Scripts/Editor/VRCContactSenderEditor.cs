@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using VRC.SDK3.Dynamics.Contact.Components;
@@ -26,4 +26,4 @@ namespace com.tayouvr.vrchatcollisiontagexplorer
             serializedObject.ApplyModifiedProperties();
         }
     }
-}
+}*/

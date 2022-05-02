@@ -19,11 +19,6 @@ namespace com.tayouvr.vrchatcollisiontagexplorer
             window.Show();
         }
 
-        private void OnEnable()
-        {
-
-        }
-
         void OnGUI()
         {
             GUIStyle centeredStyle = new GUIStyle(GUI.skin.label);
