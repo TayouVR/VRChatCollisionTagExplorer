@@ -1,14 +1,18 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
+using VRC.SDK3.Dynamics.Contact.Components;
 
 namespace com.tayouvr.vrchatcollisiontagexplorer
 {
     public class SettingsWindow : EditorWindow
     {
+        public VRCContactSender[] selectedSenders;
+        public VRCContactReceiver[] selectedReceivers;
 
         [MenuItem("Tools/VRChat Community Collision Tags")]
         static void Init()
@@ -73,6 +77,16 @@ namespace com.tayouvr.vrchatcollisiontagexplorer
                 EditorGUI.indentLevel--;
             }
             GUI.enabled = true;
+        }
+
+        public void SetSelectedContactReceivers(VRCContactReceiver[] targets)
+        {
+            selectedReceivers = targets;
+        }
+
+        public void SetSelectedContactSenders(VRCContactSender[] targets)
+        {
+            selectedSenders = targets;
         }
     }
 }

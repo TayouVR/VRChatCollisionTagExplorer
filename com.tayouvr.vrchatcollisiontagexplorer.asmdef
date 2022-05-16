@@ -11,7 +11,8 @@
         "VRC.SDK3.Dynamics.Contact.Editor.dll",
         "VRC.SDK3.Dynamics.Contact.dll",
         "VRC.Dynamics.dll",
-        "Newtonsoft.Json.dll"
+        "Newtonsoft.Json.dll",
+        "0Harmony.dll"
     ],
     "autoReferenced": true,
     "defineConstraints": [],
